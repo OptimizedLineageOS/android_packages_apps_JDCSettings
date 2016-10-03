@@ -54,4 +54,12 @@
                 android:data="https://plus.google.com/u/0/communities/117218177262334420007" />
     </Preference>
 
+
+	<PreferenceScreen
+            android:key="clear_all_recents"
+            android:fragment="com.android.settings.rr.RecentsClearAll"
+            android:title="@string/recents_clear_all_title"
+			android:icon="@drawable/rr_recents_clear_all_icon"
+            />
+	    
 </PreferenceScreen>
