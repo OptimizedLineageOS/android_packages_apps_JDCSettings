@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 The Pure Nexus Project
-     Copyright (C) 2016 The JDCTeam
+<!-- Copyright (C) 2016 The JDCTeam
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,19 +14,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- STweaks -->
+     <!-- STweaks -->
     <string name="stweaks_title">STweaks</string>
-    <string name="stweaks_summary">Change Alucard kernel configuration</string>
+    <string name="stweaks_summary">Applicazione per la configurazione del kernel Alucard</string>
 
-    <!-- Substratum -->
+    <!-- LayersManager -->
     <string name="substratum_title">Substratum</string>
-    <string name="substratum_summary">Application developed by TeamSubstratum for Overlay Manager Service</string>
+    <string name="substratum_summary">Applicazione sviluppata dal TeamSubstratum per gestire l\'Overlay Manager Service</string>
 
     <!-- SuperSU -->
     <string name="supersu_title">SuperSU</string>
-    <string name="supersu_summary">Superuser application by ChainFire</string>
+    <string name="supersu_summary">Applicazione per i permessi di superutente creata da ChainFire</string>
 
     <!-- JDCTeam Google+ Community shortcut -->
-    <string name="community">JDCTeam on Google+</string>
-    <string name="community_summary">Join our official community and keep yourself updated about the best software for your device</string>
+    <string name="community">JDCTeam su Google+</string>
+    <string name="community_summary">Entra a far parte della nostra community ufficiale e resta aggiornato sui migliori software per il tuo telefono</string>
 </resources>

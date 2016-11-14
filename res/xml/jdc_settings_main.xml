@@ -18,4 +18,45 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title="@string/custom_settings_title" >
 
+    <!-- Substratum -->
+    <PreferenceScreen
+        android:id="@+id/substratum"
+        android:title="@string/substratum_title"
+        android:summary="@string/substratum_summary">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="projekt.substratum"
+            android:targetClass="projekt.substratum.LaunchActivity" />
+    </PreferenceScreen>
+
+    <!-- SuperSU -->
+    <PreferenceScreen
+        android:id="@+id/supersu_settings"
+        android:title="@string/supersu_title"
+        android:summary="@string/supersu_summary">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="eu.chainfire.supersu"
+            android:targetClass="eu.chainfire.supersu.MainActivity" />
+    </PreferenceScreen>
+
+    <!-- STweaks -->
+    <PreferenceScreen
+        android:id="@+id/stweaks_settings"
+        android:title="@string/stweaks_title"
+        android:summary="@string/stweaks_summary">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.gokhanmoral.stweaks.app"
+            android:targetClass="com.gokhanmoral.stweaks.app.MainActivity"/>
+    </PreferenceScreen>
+
+     <!-- JDCTeam Google+ Community shortcut -->
+    <Preference android:key="community"
+        android:title="@string/community"
+        android:summary="@string/community_summary" >
+        <intent android:action="android.intent.action.VIEW"
+                android:data="https://plus.google.com/u/0/communities/117218177262334420007" />
+    </Preference>
+
 </PreferenceScreen>
