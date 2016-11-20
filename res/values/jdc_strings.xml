@@ -19,10 +19,6 @@
     <string name="stweaks_title">STweaks</string>
     <string name="stweaks_summary">Change Alucard kernel configuration</string>
 
-    <!-- Substratum -->
-    <string name="substratum_title">Substratum</string>
-    <string name="substratum_summary">Application developed by TeamSubstratum for Overlay Manager Service</string>
-
     <!-- SuperSU -->
     <string name="supersu_title">SuperSU</string>
     <string name="supersu_summary">Superuser application by ChainFire</string>
