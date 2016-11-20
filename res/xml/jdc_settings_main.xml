@@ -18,6 +18,12 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title="@string/custom_settings_title" >
 
+	<PreferenceScreen android:key="rom_logo"
+		android:layout="@layout/rom_logo">
+	    <intent android:action="android.intent.action.VIEW"
+                    android:data="https://goo.gl/w5qIzy" />
+	</PreferenceScreen>
+
     <!-- SuperSU -->
     <PreferenceScreen
         android:id="@+id/supersu_settings"

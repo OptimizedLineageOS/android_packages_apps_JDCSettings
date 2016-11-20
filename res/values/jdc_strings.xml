@@ -26,4 +26,8 @@
     <!-- JDCTeam Google+ Community shortcut -->
     <string name="community">JDCTeam on Google+</string>
     <string name="community_summary">Join our official community and keep yourself updated about the best software for your device</string>
+    
+    <!--JDCTeam member in alphabetical order-->
+    <string name="jdcteam">alucard_24, angelcalibur, AntaresOne, -+BB+-, FernBch, franzyroy, hawkerpaul, javelinanddart, Jimsilver73, josegalre, MattBooth, side, smeroni68, skl, smstiv</string>
+
 </resources>
