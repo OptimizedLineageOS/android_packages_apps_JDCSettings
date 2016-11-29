@@ -57,7 +57,7 @@
 
 	<PreferenceScreen
             android:key="clear_all_recents"
-            android:fragment="com.android.settings.rr.RecentsClearAll"
+            android:fragment="com.jdc.settings.fragments.RecentsClearAll"
             android:title="@string/recents_clear_all_title"
 			android:icon="@drawable/rr_recents_clear_all_icon"
             />
