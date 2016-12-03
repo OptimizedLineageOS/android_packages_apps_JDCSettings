@@ -18,12 +18,12 @@
 package com.jdc.settings;
 
 import android.os.Bundle;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceScreen;
+import android.preference.Preference;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
 import com.android.settings.SettingsPreferenceFragment;
+import android.content.pm.PackageManager;
 
 public class JDCSettings extends SettingsPreferenceFragment {
 
@@ -31,11 +31,33 @@ public class JDCSettings extends SettingsPreferenceFragment {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.jdc_settings_main);
-        PreferenceScreen prefSet = getPreferenceScreen();
+        if (!isAppInstalled("eu.chainfire.supersu"))
+        {
+            final Preference preference = findPreference("supersu_settings");
+            getPreferenceScreen().removePreference(preference);
+        }
+        if (!isAppInstalled("com.gokhanmoral.stweaks.app"))
+        {
+            final Preference preference = findPreference("stweaks_settings");
+            getPreferenceScreen().removePreference(preference);
+        }
     }
 
     @Override
     protected int getMetricsCategory() {
         return MetricsEvent.JDC_SETTINGS;
+    }
+    
+    private boolean isAppInstalled(String uri)
+    {
+        try
+        {
+            getContext().getPackageManager().getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
+            return true;
+        }
+        catch (PackageManager.NameNotFoundException e)
+        {
+        }
+        return false;
     }
 }
