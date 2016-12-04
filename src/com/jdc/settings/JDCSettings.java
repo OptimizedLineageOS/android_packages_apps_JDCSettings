@@ -18,7 +18,7 @@
 package com.jdc.settings;
 
 import android.os.Bundle;
-import android.preference.Preference;
+import android.support.v7.preference.Preference;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
