@@ -27,6 +27,7 @@
     <!-- SuperSU -->
     <PreferenceScreen
         android:id="@+id/supersu_settings"
+        android:key="supersu_settings"
         android:title="@string/supersu_title"
         android:summary="@string/supersu_summary">
         <intent
@@ -38,6 +39,7 @@
     <!-- STweaks -->
     <PreferenceScreen
         android:id="@+id/stweaks_settings"
+        android:key="stweaks_settings"
         android:title="@string/stweaks_title"
         android:summary="@string/stweaks_summary">
         <intent
