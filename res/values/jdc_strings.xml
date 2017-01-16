@@ -27,6 +27,20 @@
     <string name="community">JDCTeam on Google+</string>
     <string name="community_summary">Join our official community and keep yourself updated about the best software for your device</string>
     
+    <!--Tweaks-->
+    <string name="tweaks">Tweaks</string>
+    
+    <!--Flashables-->
+    <string name="get_flashables">Get AROMA flashable packages</string>
+    <string name="supersu">SuperSU</string>
+    <string name="supersu_summary">Get the latest flashable SuperSU package</string>
+    <string name="snap">Snap Camera</string>
+    <string name="snap_summary">Get the latest flashable Snap camera</string>
+    <string name="google">Google Wallpaper and Pixel Launcher</string>
+    <string name="google_summary">Get the latest flashable Get Google Wallpaper and Pixel Launcher</string>
+    <string name="stockkernel">LineageOS official stock kernel</string>
+    <string name="stockkernel_summary">Get the latest flashable stock kernel for jflte devices</string>
+    
     <!--JDCTeam member in alphabetical order-->
     <string name="jdcteam">alucard_24, angelcalibur, AntaresOne, -+BB+-, FernBch, franzyroy, hawkerpaul, javelinanddart, Jimsilver73, josegalre, MattBooth, side, smeroni68, skl, smstiv</string>
 

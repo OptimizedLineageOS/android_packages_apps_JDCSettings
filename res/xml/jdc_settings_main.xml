@@ -47,6 +47,8 @@
             android:targetPackage="com.gokhanmoral.stweaks.app"
             android:targetClass="com.gokhanmoral.stweaks.app.MainActivity"/>
     </PreferenceScreen>
+    
+    
 
      <!-- JDCTeam Google+ Community shortcut -->
     <Preference android:key="community"
@@ -55,13 +57,51 @@
         <intent android:action="android.intent.action.VIEW"
                 android:data="https://plus.google.com/u/0/communities/117218177262334420007" />
     </Preference>
-
-
-	<PreferenceScreen
-            android:key="clear_all_recents"
-            android:fragment="com.jdc.settings.fragments.RecentsClearAll"
-            android:title="@string/recents_clear_all_title"
-			android:icon="@drawable/rr_recents_clear_all_icon"
-            />
+    
+    <!--Get Flashables-->
+    <PreferenceCategory android:key="get_flashables"
+            android:title="@string/get_flashables">
 	    
+		<Preference android:key="supersu"
+			android:title="@string/supersu"
+			android:summary="@string/supersu_summary" >
+			<intent android:action="android.intent.action.VIEW"
+				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/SR3-SuperSU-v2.79-SR3-20170114223742.zip?raw=true" />
+		</Preference>
+    
+		<Preference android:key="snap"
+			android:title="@string/snap"
+			android:summary="@string/snap_summary" >
+			<intent android:action="android.intent.action.VIEW"
+				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Snap-Camera.zip?raw=true" />
+		</Preference>
+    
+		<Preference android:key="google"
+			android:title="@string/google"
+			android:summary="@string/google_summary" >
+			<intent android:action="android.intent.action.VIEW"
+				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Google-Apps-Nougat.zip?raw=true" />
+		</Preference>
+		
+		<Preference android:key="stockkernel"
+			android:title="@string/stockkernel"
+			android:summary="@string/stockkernel_summary" >
+			<intent android:action="android.intent.action.VIEW"
+				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Stock-Kernel.zip?raw=true" />
+		</Preference>
+	    
+    </PreferenceCategory>
+
+	<!--Get Flashables-->
+	<PreferenceCategory android:key="tweaks"
+		android:title="@string/tweaks">
+	    
+		<PreferenceScreen
+		android:key="clear_all_recents"
+		android:fragment="com.jdc.settings.fragments.RecentsClearAll"
+		android:title="@string/recents_clear_all_title"
+		android:icon="@drawable/rr_recents_clear_all_icon"
+		/>
+		
+	</PreferenceCategory>
 </PreferenceScreen>
