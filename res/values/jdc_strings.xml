@@ -40,6 +40,9 @@
     <string name="google_summary">Get the latest flashable Get Google Wallpaper and Pixel Launcher</string>
     <string name="stockkernel">LineageOS official stock kernel</string>
     <string name="stockkernel_summary">Get the latest flashable stock kernel for jflte devices</string>
+    <string name="stockcamera">AOSP Camera</string>
+    <string name="stockcamera_summary">Get the latest flashable AOSP Camera</string>
+    
     
     <!--JDCTeam member in alphabetical order-->
     <string name="jdcteam">alucard_24, angelcalibur, AntaresOne, -+BB+-, FernBch, franzyroy, hawkerpaul, javelinanddart, Jimsilver73, josegalre, MattBooth, side, smeroni68, skl, smstiv</string>

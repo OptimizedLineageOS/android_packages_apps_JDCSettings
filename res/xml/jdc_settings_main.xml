@@ -89,6 +89,13 @@
 			<intent android:action="android.intent.action.VIEW"
 				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Stock-Kernel.zip?raw=true" />
 		</Preference>
+		
+		<Preference android:key="stockcamera"
+			android:title="@string/stockcamera"
+			android:summary="@string/stockcamera_summary" >
+			<intent android:action="android.intent.action.VIEW"
+				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Stock-Camera.zip?raw=true" />
+		</Preference>
 	    
     </PreferenceCategory>
 
