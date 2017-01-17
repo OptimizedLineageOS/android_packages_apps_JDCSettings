@@ -29,7 +29,7 @@
         android:id="@+id/supersu_settings"
         android:key="supersu_settings"
         android:title="@string/supersu_title"
-        android:summary="@string/supersu_summary">
+        android:summary="@string/supersuapp_summary">
         <intent
             android:action="android.intent.action.MAIN"
             android:targetPackage="eu.chainfire.supersu"

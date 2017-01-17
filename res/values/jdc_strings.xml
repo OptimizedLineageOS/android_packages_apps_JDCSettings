@@ -21,7 +21,7 @@
 
     <!-- SuperSU -->
     <string name="supersu_title">SuperSU</string>
-    <string name="supersu_summary">Superuser application by ChainFire</string>
+    <string name="supersuapp_summary">Superuser application by ChainFire</string>
 
     <!-- JDCTeam Google+ Community shortcut -->
     <string name="community">JDCTeam on Google+</string>
