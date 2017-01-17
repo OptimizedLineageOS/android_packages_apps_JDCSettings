@@ -59,4 +59,9 @@
     <string name="recents_anim_title">Recents Animations</string>
     <string name="recents_anim_summary">Customize the Delay of Recents window and its actions</string>
 
+    <!-- Recents Membar -->
+    <string name="systemui_recents_mem_display_title">Show Memory Bar</string>
+    <string name="systemui_recents_mem_display_summary">Enable Disable Ram bar in recent app view</string>
+    
+   
 </resources>
