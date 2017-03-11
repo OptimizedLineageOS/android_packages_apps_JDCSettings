@@ -115,6 +115,12 @@
 		android:title="@string/wakelock_blocker_title"
 		android:fragment="com.jdc.settings.fragments.WakelockBlockerFragment" />
 	    
+		<PreferenceScreen
+		android:key="system_animations"
+		android:fragment="com.jdc.settings.fragments.SystemAnimations"
+		android:title="@string/system_animations_title"
+		/>
+		
 		<com.android.settings.rr.Preferences.SystemSettingSwitchPreference
 		android:key="systemui_recents_mem_display"
 		android:title="@string/systemui_recents_mem_display_title"
