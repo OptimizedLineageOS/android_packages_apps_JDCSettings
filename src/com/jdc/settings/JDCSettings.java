@@ -17,16 +17,33 @@
 
 package com.jdc.settings;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.ContentResolver;
+import android.content.res.Resources;
+import android.provider.Settings;
 import android.os.Bundle;
+import android.os.UserHandle;
+import android.app.Fragment;
+import android.support.v7.preference.ListPreference;
+import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.PreferenceScreen;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
-
+import com.android.settings.R;
+import com.android.settings.Utils;
 import com.android.settings.SettingsPreferenceFragment;
 import android.content.pm.PackageManager;
 
-public class JDCSettings extends SettingsPreferenceFragment {
+public class JDCSettings extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener{
 
+    public static final String BACKKILL_TIMEOUT_MILLI = "backkill_timeout_milli";
+	
+    private ListPreference mBackKillDuration;
+	
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -41,11 +58,35 @@ public class JDCSettings extends SettingsPreferenceFragment {
             final Preference preference = findPreference("stweaks_settings");
             getPreferenceScreen().removePreference(preference);
         }
+	
+	final ContentResolver resolver = getContentResolver();
+        final PreferenceScreen prefSet = getPreferenceScreen();
+
+	mBackKillDuration = (ListPreference) prefSet.findPreference(BACKKILL_TIMEOUT_MILLI);
+        int duration = Settings.System.getIntForUser(resolver,
+                Settings.System.BACKKILL_TIMEOUT_MILLI, 3, UserHandle.USER_CURRENT);
+        mBackKillDuration.setValue(String.valueOf(duration));
+        mBackKillDuration.setSummary(mBackKillDuration.getEntry());
+        mBackKillDuration.setOnPreferenceChangeListener(this);
     }
 
     @Override
     protected int getMetricsCategory() {
         return MetricsEvent.JDC_SETTINGS;
+    }
+    
+    @Override	
+    public boolean onPreferenceChange(Preference preference, Object newValue){
+       ContentResolver resolver = getActivity().getContentResolver();
+       if (preference == mBackKillDuration) {
+		int duration = Integer.valueOf((String) newValue);
+		int index = mBackKillDuration.findIndexOfValue((String) newValue);
+		Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.BACKKILL_TIMEOUT_MILLI, duration, UserHandle.USER_CURRENT);
+            mBackKillDuration.setSummary(mBackKillDuration.getEntries()[index]);
+            return true;
+        }
+        return false;
     }
     
     private boolean isAppInstalled(String uri)

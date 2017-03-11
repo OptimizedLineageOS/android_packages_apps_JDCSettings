@@ -92,4 +92,7 @@
     <string name="wallpaper_intra_close_title">Wallpaper intra close animation</string>
     <string name="animation_duration_title">Animation duration</string>
     <string name="animation_duration_default">Default</string>
+    
+    <!--Backkill duration-->
+    <string name="backkill_timeout_title">Set the duration of back button kill</string>
 </resources>
