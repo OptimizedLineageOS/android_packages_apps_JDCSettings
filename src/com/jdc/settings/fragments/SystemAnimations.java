@@ -1,4 +1,4 @@
-package com.crdroid.settings.fragments;
+package com.jdc.settings.fragments;
 
 import android.app.Activity;
 import android.content.ContentResolver;
