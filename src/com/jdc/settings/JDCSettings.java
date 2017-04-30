@@ -109,7 +109,7 @@ public class JDCSettings extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object newValue){
        ContentResolver resolver = getActivity().getContentResolver();
 	int intValue;
-        int index;
+        int index2;
        if (preference == mBackKillDuration) {
 		int duration = Integer.valueOf((String) newValue);
 		int index = mBackKillDuration.findIndexOfValue((String) newValue);
@@ -117,27 +117,26 @@ public class JDCSettings extends SettingsPreferenceFragment implements
                     Settings.System.BACKKILL_TIMEOUT_MILLI, duration, UserHandle.USER_CURRENT);
             mBackKillDuration.setSummary(mBackKillDuration.getEntries()[index]);
             return true;
-        }
 	} else if (preference == mRowsPortrait) {
             intValue = Integer.valueOf((String) newValue);
-            index = mRowsPortrait.findIndexOfValue((String) newValue);
+            index2 = mRowsPortrait.findIndexOfValue((String) newValue);
             Settings.Secure.putInt(resolver,
                     Settings.Secure.QS_ROWS_PORTRAIT, intValue);
-            preference.setSummary(mRowsPortrait.getEntries()[index]);
+            preference.setSummary(mRowsPortrait.getEntries()[index2]);
             return true;
         } else if (preference == mRowsLandscape) {
             intValue = Integer.valueOf((String) newValue);
-            index = mRowsLandscape.findIndexOfValue((String) newValue);
+            index2 = mRowsLandscape.findIndexOfValue((String) newValue);
             Settings.Secure.putInt(resolver,
                     Settings.Secure.QS_ROWS_LANDSCAPE, intValue);
-            preference.setSummary(mRowsLandscape.getEntries()[index]);
+            preference.setSummary(mRowsLandscape.getEntries()[index2]);
             return true;
         } else if (preference == mQsColumns) {
             intValue = Integer.valueOf((String) newValue);
-            index = mQsColumns.findIndexOfValue((String) newValue);
+            index2 = mQsColumns.findIndexOfValue((String) newValue);
             Settings.Secure.putInt(resolver,
                     Settings.Secure.QS_COLUMNS, intValue);
-            preference.setSummary(mQsColumns.getEntries()[index]);
+            preference.setSummary(mQsColumns.getEntries()[index2]);
             return true;
 	}
         return false;
