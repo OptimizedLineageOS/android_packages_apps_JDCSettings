@@ -30,6 +30,8 @@ import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceScreen;
+import android.text.TextUtils;
+import android.view.View;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -41,8 +43,14 @@ public class JDCSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener{
 
     public static final String BACKKILL_TIMEOUT_MILLI = "backkill_timeout_milli";
+    private static final String PREF_ROWS_PORTRAIT = "qs_rows_portrait";
+    private static final String PREF_ROWS_LANDSCAPE = "qs_rows_landscape";
+    private static final String PREF_COLUMNS = "qs_columns";
 	
     private ListPreference mBackKillDuration;
+    private ListPreference mRowsPortrait;
+    private ListPreference mRowsLandscape;
+    private ListPreference mQsColumns;
 	
     @Override
     public void onCreate(Bundle icicle) {
@@ -68,6 +76,28 @@ public class JDCSettings extends SettingsPreferenceFragment implements
         mBackKillDuration.setValue(String.valueOf(duration));
         mBackKillDuration.setSummary(mBackKillDuration.getEntry());
         mBackKillDuration.setOnPreferenceChangeListener(this);
+	
+	 mRowsPortrait = (ListPreference) findPreference(PREF_ROWS_PORTRAIT);
+        int rowsPortrait = Settings.Secure.getInt(resolver,
+                Settings.Secure.QS_ROWS_PORTRAIT, 3);
+        mRowsPortrait.setValue(String.valueOf(rowsPortrait));
+        mRowsPortrait.setSummary(mRowsPortrait.getEntry());
+        mRowsPortrait.setOnPreferenceChangeListener(this);
+
+        int defaultValue = getResources().getInteger(com.android.internal.R.integer.config_qs_num_rows_landscape_default);
+        mRowsLandscape = (ListPreference) findPreference(PREF_ROWS_LANDSCAPE);
+        int rowsLandscape = Settings.Secure.getInt(resolver,
+                Settings.Secure.QS_ROWS_LANDSCAPE, defaultValue);
+        mRowsLandscape.setValue(String.valueOf(rowsLandscape));
+        mRowsLandscape.setSummary(mRowsLandscape.getEntry());
+        mRowsLandscape.setOnPreferenceChangeListener(this);
+
+        mQsColumns = (ListPreference) findPreference(PREF_COLUMNS);
+        int columnsQs = Settings.Secure.getInt(resolver,
+                Settings.Secure.QS_COLUMNS, 3);
+        mQsColumns.setValue(String.valueOf(columnsQs));
+        mQsColumns.setSummary(mQsColumns.getEntry());
+        mQsColumns.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -78,6 +108,8 @@ public class JDCSettings extends SettingsPreferenceFragment implements
     @Override	
     public boolean onPreferenceChange(Preference preference, Object newValue){
        ContentResolver resolver = getActivity().getContentResolver();
+	int intValue;
+        int index;
        if (preference == mBackKillDuration) {
 		int duration = Integer.valueOf((String) newValue);
 		int index = mBackKillDuration.findIndexOfValue((String) newValue);
@@ -86,6 +118,28 @@ public class JDCSettings extends SettingsPreferenceFragment implements
             mBackKillDuration.setSummary(mBackKillDuration.getEntries()[index]);
             return true;
         }
+	} else if (preference == mRowsPortrait) {
+            intValue = Integer.valueOf((String) newValue);
+            index = mRowsPortrait.findIndexOfValue((String) newValue);
+            Settings.Secure.putInt(resolver,
+                    Settings.Secure.QS_ROWS_PORTRAIT, intValue);
+            preference.setSummary(mRowsPortrait.getEntries()[index]);
+            return true;
+        } else if (preference == mRowsLandscape) {
+            intValue = Integer.valueOf((String) newValue);
+            index = mRowsLandscape.findIndexOfValue((String) newValue);
+            Settings.Secure.putInt(resolver,
+                    Settings.Secure.QS_ROWS_LANDSCAPE, intValue);
+            preference.setSummary(mRowsLandscape.getEntries()[index]);
+            return true;
+        } else if (preference == mQsColumns) {
+            intValue = Integer.valueOf((String) newValue);
+            index = mQsColumns.findIndexOfValue((String) newValue);
+            Settings.Secure.putInt(resolver,
+                    Settings.Secure.QS_COLUMNS, intValue);
+            preference.setSummary(mQsColumns.getEntries()[index]);
+            return true;
+	}
         return false;
     }
     

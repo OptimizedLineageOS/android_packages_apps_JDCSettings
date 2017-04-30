@@ -29,6 +29,7 @@
     
     <!--Tweaks-->
     <string name="tweaks">Tweaks</string>
+    <string name="qs_tweaks">Quick Settings tweaks</string>
     
     <!--Flashables-->
     <string name="get_flashables">Get AROMA flashable packages</string>
@@ -100,4 +101,8 @@
    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 
+    <!--Quick Settings tweaks-->
+    <string name="qs_rows_portrait_title">Rows (portrait)</string>
+    <string name="qs_rows_landscape_title">Rows (landscape)</string>
+    <string name="qs_columns_title">Columns</string>
 </resources>
