@@ -62,18 +62,19 @@
     <PreferenceCategory android:key="get_flashables"
             android:title="@string/get_flashables">
 	    
+	    
+	        <Preference android:key="stockkernel"
+			android:title="@string/stockkernel"
+			android:summary="@string/stockkernel_summary" >
+			<intent android:action="android.intent.action.VIEW"
+				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Stock-Kernel.zip?raw=true" />
+		</Preference>
+		
 		<Preference android:key="supersu"
 			android:title="@string/supersu"
 			android:summary="@string/supersu_summary" >
 			<intent android:action="android.intent.action.VIEW"
 				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/SR3-SuperSU-v2.79-SR3-20170114223742.zip?raw=true" />
-		</Preference>
-    
-		<Preference android:key="snap"
-			android:title="@string/snap"
-			android:summary="@string/snap_summary" >
-			<intent android:action="android.intent.action.VIEW"
-				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Snap-Camera.zip?raw=true" />
 		</Preference>
     
 		<Preference android:key="google"
@@ -83,11 +84,11 @@
 				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Google-Apps-Nougat.zip?raw=true" />
 		</Preference>
 		
-		<Preference android:key="stockkernel"
-			android:title="@string/stockkernel"
-			android:summary="@string/stockkernel_summary" >
+		<Preference android:key="snap"
+			android:title="@string/snap"
+			android:summary="@string/snap_summary" >
 			<intent android:action="android.intent.action.VIEW"
-				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Stock-Kernel.zip?raw=true" />
+				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Snap-Camera.zip?raw=true" />
 		</Preference>
 		
 		<Preference android:key="stockcamera"
