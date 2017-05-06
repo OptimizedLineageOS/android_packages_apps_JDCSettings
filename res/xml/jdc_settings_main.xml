@@ -84,6 +84,13 @@
 				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Google-Apps-Nougat.zip?raw=true" />
 		</Preference>
 		
+		<Preference android:key="bootanims"
+			android:title="@string/bootanims"
+			android:summary="@string/bootanims_summary" >
+			<intent android:action="android.intent.action.VIEW"
+				android:data="https://github.com/Creeper36/Aroma-BootAnimations-S4/raw/master/Aroma-BootAnimations-jflte-OptLOS.zip" />
+		</Preference>
+		
 		<Preference android:key="snap"
 			android:title="@string/snap"
 			android:summary="@string/snap_summary" >

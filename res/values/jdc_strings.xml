@@ -39,6 +39,8 @@
     <string name="snap_summary">Get the latest flashable Snap camera</string>
     <string name="google">Google Wallpaper and Pixel Launcher</string>
     <string name="google_summary">Get the latest flashable Google Wallpaper and Pixel Launcher</string>
+    <string name="bootanims">Aroma-BootAnimations</string>
+    <string name="bootanims_summary">Use Aroma to select your favorite bootanimation - designed for Optimized LineageOS</string>
     <string name="stockkernel">LineageOS official stock kernel</string>
     <string name="stockkernel_summary">Get the latest flashable stock kernel for jflte devices</string>
     <string name="stockcamera">AOSP Camera</string>
