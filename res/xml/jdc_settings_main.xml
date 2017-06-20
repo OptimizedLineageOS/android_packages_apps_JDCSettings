@@ -112,6 +112,13 @@
 		android:title="@string/tweaks">
 	    
 		<PreferenceScreen
+                android:key="interface_animation_scroll"
+                android:fragment="com.jdc.settings.fragments.ScrollAnimationInterfaceSettings"
+                android:title="@string/scrolling_title"
+                android:summary="@string/scrolling_summary" 
+                android:icon="@drawable/rr_scroll_icon"/> 
+
+		<PreferenceScreen
 		android:key="clear_all_recents"
 		android:fragment="com.jdc.settings.fragments.RecentsClearAll"
 		android:title="@string/recents_clear_all_title"
