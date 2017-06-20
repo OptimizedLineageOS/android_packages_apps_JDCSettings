@@ -64,7 +64,7 @@ public class ScrollAnimationInterfaceSettings extends SettingsPreferenceFragment
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.RESURRECTED;
+        return MetricsEvent.JDC_SETTINGS;
     }
 
     @Override
@@ -108,12 +108,7 @@ public class ScrollAnimationInterfaceSettings extends SettingsPreferenceFragment
 
     }
 
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.add(0, MENU_RESET, 0, R.string.reset)
-                .setIcon(R.drawable.ic_settings_backup) // use the backup icon
-                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
