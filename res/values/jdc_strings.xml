@@ -32,19 +32,11 @@
     <string name="qs_tweaks">Quick Settings tweaks</string>
     
     <!--Flashables-->
-    <string name="get_flashables">Get AROMA flashable packages</string>
+    <string name="get_flashables">Get flashable packages</string>
     <string name="supersu">SuperSU</string>
     <string name="supersu_summary">Get the latest flashable SuperSU package</string>
-    <string name="snap">Snap Camera</string>
-    <string name="snap_summary">Get the latest flashable Snap camera</string>
     <string name="google">Google Wallpaper and Pixel Launcher</string>
     <string name="google_summary">Get the latest flashable Google Wallpaper and Pixel Launcher</string>
-    <string name="bootanims">Aroma-BootAnimations</string>
-    <string name="bootanims_summary">Use Aroma to select your favorite bootanimation - designed for Optimized LineageOS</string>
-    <string name="stockkernel">LineageOS official stock kernel</string>
-    <string name="stockkernel_summary">Get the latest flashable stock kernel for jflte devices</string>
-    <string name="stockcamera">AOSP Camera</string>
-    <string name="stockcamera_summary">Get the latest flashable AOSP Camera</string>
     
     
     <!--JDCTeam member in alphabetical order-->

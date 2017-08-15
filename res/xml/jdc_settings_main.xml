@@ -36,17 +36,6 @@
             android:targetClass="eu.chainfire.supersu.MainActivity" />
     </PreferenceScreen>
 
-    <!-- STweaks -->
-    <PreferenceScreen
-        android:id="@+id/stweaks_settings"
-        android:key="stweaks_settings"
-        android:title="@string/stweaks_title"
-        android:summary="@string/stweaks_summary">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="com.gokhanmoral.stweaks.app"
-            android:targetClass="com.gokhanmoral.stweaks.app.MainActivity"/>
-    </PreferenceScreen>
     
     
 
@@ -63,12 +52,6 @@
             android:title="@string/get_flashables">
 	    
 	    
-	        <Preference android:key="stockkernel"
-			android:title="@string/stockkernel"
-			android:summary="@string/stockkernel_summary" >
-			<intent android:action="android.intent.action.VIEW"
-				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Stock-Kernel.zip?raw=true" />
-		</Preference>
 		
 		<Preference android:key="supersu"
 			android:title="@string/supersu"
@@ -83,27 +66,7 @@
 			<intent android:action="android.intent.action.VIEW"
 				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Google-Apps-Nougat.zip?raw=true" />
 		</Preference>
-		
-		<Preference android:key="bootanims"
-			android:title="@string/bootanims"
-			android:summary="@string/bootanims_summary" >
-			<intent android:action="android.intent.action.VIEW"
-				android:data="https://github.com/Creeper36/Aroma-BootAnimations-S4/raw/master/Aroma-BootAnimations-jflte-OptLOS.zip" />
-		</Preference>
-		
-		<Preference android:key="snap"
-			android:title="@string/snap"
-			android:summary="@string/snap_summary" >
-			<intent android:action="android.intent.action.VIEW"
-				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Snap-Camera.zip?raw=true" />
-		</Preference>
-		
-		<Preference android:key="stockcamera"
-			android:title="@string/stockcamera"
-			android:summary="@string/stockcamera_summary" >
-			<intent android:action="android.intent.action.VIEW"
-				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Stock-Camera.zip?raw=true" />
-		</Preference>
+
 	    
     </PreferenceCategory>
 
