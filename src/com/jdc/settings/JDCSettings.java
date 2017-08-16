@@ -56,12 +56,7 @@ public class JDCSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.jdc_settings_main);
-        if (!isAppInstalled("eu.chainfire.supersu"))
-        {
-            final Preference preference = findPreference("supersu_settings");
-            getPreferenceScreen().removePreference(preference);
-        }
-	
+        	
 	final ContentResolver resolver = getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
 
