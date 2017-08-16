@@ -15,30 +15,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- STweaks -->
-    <string name="stweaks_title">STweaks</string>
-    <string name="stweaks_summary">Change Alucard kernel configuration</string>
-
-    <!-- SuperSU -->
-    <string name="supersu_title">SuperSU</string>
-    <string name="supersuapp_summary">Superuser application by ChainFire</string>
-
-    <!-- JDCTeam Google+ Community shortcut -->
-    <string name="community">JDCTeam on Google+</string>
-    <string name="community_summary">Join our official community and keep yourself updated about the best software for your device</string>
-    
     <!--Tweaks-->
     <string name="tweaks">Tweaks</string>
     <string name="qs_tweaks">Quick Settings tweaks</string>
-    
-    <!--Flashables-->
-    <string name="get_flashables">Get flashable packages</string>
-    <string name="supersu">SuperSU</string>
-    <string name="supersu_summary">Get the latest flashable SuperSU package</string>
-    <string name="google">Google Wallpaper and Pixel Launcher</string>
-    <string name="google_summary">Get the latest flashable Google Wallpaper and Pixel Launcher</string>
-    
-    
+        
     <!--JDCTeam member in alphabetical order-->
     <string name="jdcteam">alucard_24, angelcalibur, AntaresOne, -+BB+-, FernBch, franzyroy, hawkerpaul, javelinanddart, Jimsilver73, josegalre, MattBooth, side, smeroni68, skl, smstiv</string>
 
