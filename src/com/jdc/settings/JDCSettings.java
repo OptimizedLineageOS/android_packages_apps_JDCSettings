@@ -61,11 +61,6 @@ public class JDCSettings extends SettingsPreferenceFragment implements
             final Preference preference = findPreference("supersu_settings");
             getPreferenceScreen().removePreference(preference);
         }
-        if (!isAppInstalled("com.gokhanmoral.stweaks.app"))
-        {
-            final Preference preference = findPreference("stweaks_settings");
-            getPreferenceScreen().removePreference(preference);
-        }
 	
 	final ContentResolver resolver = getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
