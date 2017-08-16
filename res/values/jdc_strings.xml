@@ -95,4 +95,17 @@
     <string name="scroll_disclaimer_summary">Note: Most apps need to be restarted for custom values to take effect</string>
     <string name="animation_settings_reset_message">Reset all animation settings to default?</string>
 
+    <!--Flashables-->
+    <string name="get_flashables">Get AROMA flashable packages</string>
+    <string name="supersu">SuperSU</string>
+    <string name="supersu_summary">Get the latest flashable SuperSU package</string>
+    <string name="snap">Snap Camera</string>
+    <string name="snap_summary">Get the latest flashable Snap camera</string>
+    <string name="google">Google Wallpaper and Pixel Launcher</string>
+    <string name="google_summary">Get the latest flashable Google Wallpaper and Pixel Launcher</string>
+    <string name="stockkernel">LineageOS official stock kernel</string>
+    <string name="stockkernel_summary">Get the latest flashable stock kernel for OnePlus5 devices</string>
+    <string name="stockcamera">AOSP Camera</string>
+    <string name="stockcamera_summary">Get the latest flashable AOSP Camera</string>
+    
 </resources>
