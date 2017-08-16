@@ -18,60 +18,9 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title="@string/custom_settings_title" >
 
-	<PreferenceScreen android:key="rom_logo"
-		android:layout="@layout/rom_logo">
-	    <intent android:action="android.intent.action.VIEW"
-                    android:data="https://goo.gl/w5qIzy" />
-	</PreferenceScreen>
-
-    <!-- SuperSU -->
-    <PreferenceScreen
-        android:id="@+id/supersu_settings"
-        android:key="supersu_settings"
-        android:title="@string/supersu_title"
-        android:summary="@string/supersuapp_summary">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="eu.chainfire.supersu"
-            android:targetClass="eu.chainfire.supersu.MainActivity" />
-    </PreferenceScreen>
-
-    
-    
-
-     <!-- JDCTeam Google+ Community shortcut -->
-    <Preference android:key="community"
-        android:title="@string/community"
-        android:summary="@string/community_summary" >
-        <intent android:action="android.intent.action.VIEW"
-                android:data="https://plus.google.com/u/0/communities/117218177262334420007" />
-    </Preference>
-    
-    <!--Get Flashables-->
-    <PreferenceCategory android:key="get_flashables"
-            android:title="@string/get_flashables">
-	    
-	    
 		
-		<Preference android:key="supersu"
-			android:title="@string/supersu"
-			android:summary="@string/supersu_summary" >
-			<intent android:action="android.intent.action.VIEW"
-				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/SR3-SuperSU-v2.79-SR3-20170114223742.zip?raw=true" />
-		</Preference>
-    
-		<Preference android:key="google"
-			android:title="@string/google"
-			android:summary="@string/google_summary" >
-			<intent android:action="android.intent.action.VIEW"
-				android:data="https://github.com/dkati/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Google-Apps-Nougat.zip?raw=true" />
-		</Preference>
-
-	    
-    </PreferenceCategory>
-
-	
-	<PreferenceCategory android:key="tweaks"
+    <!-- Tweaks -->
+    	<PreferenceCategory android:key="tweaks"
 		android:title="@string/tweaks">
 	    
 		<PreferenceScreen
