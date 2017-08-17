@@ -23,6 +23,11 @@
     	<PreferenceCategory android:key="tweaks"
 		android:title="@string/tweaks">
 	    
+                <PreferenceScreen
+		android:key="ticker"
+		android:fragment="com.jdc.settings.fragments.Ticker"
+		android:title="@string/ticker_screen_title" />
+
 		<PreferenceScreen
                 android:key="interface_animation_scroll"
                 android:fragment="com.jdc.settings.fragments.ScrollAnimationInterfaceSettings"
