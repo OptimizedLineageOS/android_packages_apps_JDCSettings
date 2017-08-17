@@ -27,8 +27,7 @@
                 android:key="interface_animation_scroll"
                 android:fragment="com.jdc.settings.fragments.ScrollAnimationInterfaceSettings"
                 android:title="@string/scrolling_title"
-                android:summary="@string/scrolling_summary" 
-                android:icon="@drawable/rr_scroll_icon"/> 
+                android:summary="@string/scrolling_summary" /> 
 		
 		<PreferenceScreen
 		android:key="ticker"
