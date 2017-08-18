@@ -23,6 +23,13 @@
     	<PreferenceCategory android:key="tweaks"
 		android:title="@string/tweaks">
 
+
+		<com.jdc.settings.preference.SystemSettingSwitchPreference
+		android:key="music_tile_title"
+		android:title="@string/qs_music_tile_track_optional_title"
+		android:summary="@string/qs_music_tile_track_optional_summary"
+		android:defaultValue="false"/>
+		
 		<PreferenceScreen
                 android:key="interface_animation_scroll"
                 android:fragment="com.jdc.settings.fragments.ScrollAnimationInterfaceSettings"

@@ -119,4 +119,8 @@
     <string name="icon_title">Icon</string>
     <string name="colors_title">Colors</string>
     
+    <!--Music on StatusBar and QS-->
+    <string name="qs_music_tile_track_optional_title">Music tile track title</string>
+    <string name="qs_music_tile_track_optional_summary">Show the music track title as the QS tile title</string>
+    
 </resources>
