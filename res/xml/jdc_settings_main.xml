@@ -104,13 +104,6 @@
 	 <!--Get Flashables-->
      <PreferenceCategory android:key="get_flashables"
 		android:title="@string/get_flashables">
-	     
-		<Preference android:key="stockkernel"
-			android:title="@string/stockkernel"
-			android:summary="@string/stockkernel_summary" >
-			<intent android:action="android.intent.action.VIEW"
-				android:data="https://github.com/PalmRom/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Stock-Camera.zip?raw=true" />
-		</Preference>
 		
 		<Preference android:key="snap"
 			android:title="@string/snap"
