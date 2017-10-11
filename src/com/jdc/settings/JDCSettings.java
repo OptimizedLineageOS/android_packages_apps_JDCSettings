@@ -46,11 +46,14 @@ public class JDCSettings extends SettingsPreferenceFragment implements
     private static final String PREF_ROWS_PORTRAIT = "qs_rows_portrait";
     private static final String PREF_ROWS_LANDSCAPE = "qs_rows_landscape";
     private static final String PREF_COLUMNS = "qs_columns";
+    private static final String KEY_SHOW_FOURG = "show_fourg";
 	
     private ListPreference mBackKillDuration;
     private ListPreference mRowsPortrait;
     private ListPreference mRowsLandscape;
     private ListPreference mQsColumns;
+		
+    private SwitchPreference mShowFourG;
 	
     @Override
     public void onCreate(Bundle icicle) {
@@ -88,6 +91,13 @@ public class JDCSettings extends SettingsPreferenceFragment implements
         mQsColumns.setValue(String.valueOf(columnsQs));
         mQsColumns.setSummary(mQsColumns.getEntry());
         mQsColumns.setOnPreferenceChangeListener(this);
+	
+	//4G stuff
+	mShowFourG = (SwitchPreference) prefSet.findPreference(KEY_SHOW_FOURG);
+        PackageManager pm = getActivity().getPackageManager();
+        if (!pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) {
+		prefSet.removePreference(mShowFourG);
+        }
     }
 
     @Override
