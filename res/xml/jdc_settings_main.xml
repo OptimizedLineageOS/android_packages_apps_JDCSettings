@@ -35,11 +35,6 @@
                 android:fragment="com.jdc.settings.fragments.ScrollAnimationInterfaceSettings"
                 android:title="@string/scrolling_title"
                 android:summary="@string/scrolling_summary" /> 
-		
-		<PreferenceScreen
-		android:key="ticker"
-		android:fragment="com.jdc.settings.fragments.Ticker"
-		android:title="@string/ticker_screen_title" />
 
 		<PreferenceScreen
 		android:key="clear_all_recents"
