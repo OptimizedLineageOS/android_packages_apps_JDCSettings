@@ -102,37 +102,4 @@
 		
 	</PreferenceCategory>
 	
-	 <!--Get Flashables-->
-     <PreferenceCategory android:key="get_flashables"
-		android:title="@string/get_flashables">
-		
-		<Preference android:key="snap"
-			android:title="@string/snap"
-			android:summary="@string/snap_summary" >
-			<intent android:action="android.intent.action.VIEW"
-				android:data="https://github.com/PalmRom/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Snap-Camera.zip?raw=true" />
-		</Preference>
-		
-		<Preference android:key="stockcamera"
-			android:title="@string/stockcamera"
-			android:summary="@string/stockcamera_summary" >
-			<intent android:action="android.intent.action.VIEW"
-				android:data="https://github.com/PalmRom/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Stock-Camera.zip" />
-		</Preference>
-		
-		<Preference android:key="supersu"
- 			android:title="@string/supersu"
- 			android:summary="@string/supersu_summary" >
- 			<intent android:action="android.intent.action.VIEW"
- 				android:data="https://github.com/PalmRom/OptimizedCM-flashables/blob/opt-cm-14.1/Release/SuperSU-v2.82-201705271822.zip?raw=true" />
- 		</Preference>
-     
- 		<Preference android:key="google"
- 			android:title="@string/google"
- 			android:summary="@string/google_summary" >
- 			<intent android:action="android.intent.action.VIEW"
- 				android:data="https://github.com/PalmRom/OptimizedCM-flashables/blob/opt-cm-14.1/Release/Optimized-LineageOS-Google-Apps-Nougat.zip?raw=true" />
- 		</Preference>
-
-     </PreferenceCategory>
 </PreferenceScreen>
